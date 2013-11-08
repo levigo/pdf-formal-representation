@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<!--
+
+    <pre>
+    Copyright (c) 1995-2012 levigo holding gmbh. All Rights Reserved.
+
+    This software is the proprietary information of levigo holding gmbh.
+    Use is subject to license terms.
+    </pre>
+
+-->
+
+<plugin>
+
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <package 
+       uri = "http://www.levigo.com/jadice/tools/pdf/modelgen/PDFModel" 
+       class = "com.levigo.jadice.tools.pdf.modelgen.pdfmodel.PdfmodelPackage"
+       genModel = "com/levigo/jadice/tools/pdf/modelgen/PDFModel.genmodel" /> 
+	
+  </extension>
+
+
+</plugin>

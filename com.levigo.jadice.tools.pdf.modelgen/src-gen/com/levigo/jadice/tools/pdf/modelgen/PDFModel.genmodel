@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/com.levigo.jadice.tools.pdf.modelgen/src-gen"
+    editDirectory="/com.levigo.jadice.tools.pdf.modelgen.edit/src" editorDirectory="/com.levigo.jadice.tools.pdf.modelgen.editor/src"
+    modelPluginID="com.levigo.jadice.tools.pdf.modelgen" forceOverwrite="true" modelName="PDFModel"
+    updateClasspath="false" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    complianceLevel="5.0" copyrightFields="false" editPluginID="com.levigo.jadice.tools.pdf.modelgen.edit"
+    editorPluginID="com.levigo.jadice.tools.pdf.modelgen.editor" runtimeVersion="2.9">
+  <genPackages prefix="Pdfmodel" basePackage="com.levigo.jadice.tools.pdf.modelgen"
+      disposableProviderFactory="true" ecorePackage="PDFModel.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="PDFModel.ecore#//IndirectReference">
+      <genEnumLiterals ecoreEnumLiteral="PDFModel.ecore#//IndirectReference/UNDEFINED"/>
+      <genEnumLiterals ecoreEnumLiteral="PDFModel.ecore#//IndirectReference/INDIRECT_SHALL"/>
+      <genEnumLiterals ecoreEnumLiteral="PDFModel.ecore#//IndirectReference/INDIRECT_SHALL_NOT"/>
+      <genEnumLiterals ecoreEnumLiteral="PDFModel.ecore#//IndirectReference/INDIRECT_SHOULD"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="PDFModel.ecore#//SinceVersion">
+      <genEnumLiterals ecoreEnumLiteral="PDFModel.ecore#//SinceVersion/UNDEFINED"/>
+      <genEnumLiterals ecoreEnumLiteral="PDFModel.ecore#//SinceVersion/PDF_10"/>
+      <genEnumLiterals ecoreEnumLiteral="PDFModel.ecore#//SinceVersion/PDF_11"/>
+      <genEnumLiterals ecoreEnumLiteral="PDFModel.ecore#//SinceVersion/PDF_12"/>
+      <genEnumLiterals ecoreEnumLiteral="PDFModel.ecore#//SinceVersion/PDF_13"/>
+      <genEnumLiterals ecoreEnumLiteral="PDFModel.ecore#//SinceVersion/PDF_14"/>
+      <genEnumLiterals ecoreEnumLiteral="PDFModel.ecore#//SinceVersion/PDF_15"/>
+      <genEnumLiterals ecoreEnumLiteral="PDFModel.ecore#//SinceVersion/PDF_16"/>
+      <genEnumLiterals ecoreEnumLiteral="PDFModel.ecore#//SinceVersion/PDF_17"/>
+      <genEnumLiterals ecoreEnumLiteral="PDFModel.ecore#//SinceVersion/PDF_32000_1"/>
+      <genEnumLiterals ecoreEnumLiteral="PDFModel.ecore#//SinceVersion/PDF_20"/>
+      <genEnumLiterals ecoreEnumLiteral="PDFModel.ecore#//SinceVersion/PDF_32000_2"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="PDFModel.ecore#//Bool">
+      <genEnumLiterals ecoreEnumLiteral="PDFModel.ecore#//Bool/TRUE"/>
+      <genEnumLiterals ecoreEnumLiteral="PDFModel.ecore#//Bool/FALSE"/>
+    </genEnums>
+    <genClasses ecoreClass="PDFModel.ecore#//PDFModel">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PDFModel.ecore#//PDFModel/config"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PDFModel.ecore#//PDFModel/packages"/>
+    </genClasses>
+    <genClasses ecoreClass="PDFModel.ecore#//ModelConfig">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//ModelConfig/basePackage"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PDFModel.ecore#//ModelConfig/coreTypesConfig"/>
+    </genClasses>
+    <genClasses ecoreClass="PDFModel.ecore#//CoreTypesConfig">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//CoreTypesConfig/objectTypeName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//CoreTypesConfig/referenceTypeName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//CoreTypesConfig/dictionaryTypeName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//CoreTypesConfig/nameTypeName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//CoreTypesConfig/stringTypeName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//CoreTypesConfig/literalStringTypeName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//CoreTypesConfig/hexStringTypeName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//CoreTypesConfig/arrayTypeName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//CoreTypesConfig/booleanTypeName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//CoreTypesConfig/numberTypeName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//CoreTypesConfig/realTypeName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//CoreTypesConfig/integerTypeName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//CoreTypesConfig/nullTypeName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//CoreTypesConfig/streamTypeName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//CoreTypesConfig/nameTreeTypeName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//CoreTypesConfig/numberTreeTypeName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//CoreTypesConfig/nameTreeParserTypeName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//CoreTypesConfig/numberTreeParserTypeName"/>
+    </genClasses>
+    <genClasses ecoreClass="PDFModel.ecore#//AbstractDeclaration">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//AbstractDeclaration/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//AbstractDeclaration/since"/>
+    </genClasses>
+    <genClasses ecoreClass="PDFModel.ecore#//SpecificationReference">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PDFModel.ecore#//SpecificationReference/section"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//SpecificationReference/table"/>
+    </genClasses>
+    <genClasses ecoreClass="PDFModel.ecore#//SectionReference">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//SectionReference/section"/>
+    </genClasses>
+    <genClasses ecoreClass="PDFModel.ecore#//ArrayMappedDeclaration">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PDFModel.ecore#//ArrayMappedDeclaration/entries"/>
+    </genClasses>
+    <genClasses ecoreClass="PDFModel.ecore#//AbstractEntry">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//AbstractEntry/cached"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//AbstractEntry/required"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//AbstractEntry/indirectReference"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PDFModel.ecore#//AbstractEntry/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//AbstractEntry/since"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//AbstractEntry/requiresCustomValidation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//AbstractEntry/requiresCustomDefault"/>
+    </genClasses>
+    <genClasses ecoreClass="PDFModel.ecore#//ArrayMappedEntry">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//ArrayMappedEntry/index"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//ArrayMappedEntry/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//ArrayMappedEntry/nullable"/>
+    </genClasses>
+    <genClasses ecoreClass="PDFModel.ecore#//DictionaryDeclaration">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//DictionaryDeclaration/stream"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference PDFModel.ecore#//DictionaryDeclaration/superTypes"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PDFModel.ecore#//DictionaryDeclaration/subtypeConfig"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PDFModel.ecore#//DictionaryDeclaration/entries"/>
+    </genClasses>
+    <genClasses ecoreClass="PDFModel.ecore#//SubtypeConfig">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference PDFModel.ecore#//SubtypeConfig/candidates"/>
+    </genClasses>
+    <genClasses ecoreClass="PDFModel.ecore#//DictionaryEntry">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//DictionaryEntry/key"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//DictionaryEntry/alias"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//DictionaryEntry/inheritable"/>
+    </genClasses>
+    <genClasses ecoreClass="PDFModel.ecore#//PackageDeclaration">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//PackageDeclaration/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PDFModel.ecore#//PackageDeclaration/elements"/>
+    </genClasses>
+    <genClasses ecoreClass="PDFModel.ecore#//BitFlagsDeclaration">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PDFModel.ecore#//BitFlagsDeclaration/specificationReference"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PDFModel.ecore#//BitFlagsDeclaration/declarations"/>
+    </genClasses>
+    <genClasses ecoreClass="PDFModel.ecore#//BitFlagsDeclarationPart">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//BitFlagsDeclarationPart/index"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//BitFlagsDeclarationPart/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//BitFlagsDeclarationPart/since"/>
+    </genClasses>
+    <genClasses ecoreClass="PDFModel.ecore#//NameEnumDeclaration">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PDFModel.ecore#//NameEnumDeclaration/declarations"/>
+    </genClasses>
+    <genClasses ecoreClass="PDFModel.ecore#//NameEnumDeclarationPart">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//NameEnumDeclarationPart/constant"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//NameEnumDeclarationPart/alias"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//NameEnumDeclarationPart/since"/>
+    </genClasses>
+    <genClasses ecoreClass="PDFModel.ecore#//AbstractEntryValue"/>
+    <genClasses ecoreClass="PDFModel.ecore#//NullObjectEntryValue"/>
+    <genClasses ecoreClass="PDFModel.ecore#//NameObjectEntryValue">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//NameObjectEntryValue/hasMustBe"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//NameObjectEntryValue/requiredValue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//NameObjectEntryValue/hasDefault"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//NameObjectEntryValue/defaultValue"/>
+    </genClasses>
+    <genClasses ecoreClass="PDFModel.ecore#//NumberObjectEntryValue">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PDFModel.ecore#//NumberObjectEntryValue/rule"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//NumberObjectEntryValue/hasMustBe"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PDFModel.ecore#//NumberObjectEntryValue/requiredValue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//NumberObjectEntryValue/hasDefault"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PDFModel.ecore#//NumberObjectEntryValue/defaultValue"/>
+    </genClasses>
+    <genClasses ecoreClass="PDFModel.ecore#//NumberValidationRule"/>
+    <genClasses ecoreClass="PDFModel.ecore#//NumberInclusiveRangeValidationRule">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PDFModel.ecore#//NumberInclusiveRangeValidationRule/lowerBound"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PDFModel.ecore#//NumberInclusiveRangeValidationRule/upperBound"/>
+    </genClasses>
+    <genClasses ecoreClass="PDFModel.ecore#//NumberGreaterValidationRule">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PDFModel.ecore#//NumberGreaterValidationRule/minValue"/>
+    </genClasses>
+    <genClasses ecoreClass="PDFModel.ecore#//NumberGreaterEqualsValidationRule">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PDFModel.ecore#//NumberGreaterEqualsValidationRule/minValue"/>
+    </genClasses>
+    <genClasses ecoreClass="PDFModel.ecore#//NumberValuesValidationRule">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PDFModel.ecore#//NumberValuesValidationRule/value"/>
+    </genClasses>
+    <genClasses ecoreClass="PDFModel.ecore#//NumberValuesValidationRuleEntry">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PDFModel.ecore#//NumberValuesValidationRuleEntry/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//NumberValuesValidationRuleEntry/since"/>
+    </genClasses>
+    <genClasses ecoreClass="PDFModel.ecore#//IntegerObjectEntryValue">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PDFModel.ecore#//IntegerObjectEntryValue/rule"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//IntegerObjectEntryValue/hasMustBe"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PDFModel.ecore#//IntegerObjectEntryValue/requiredValue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//IntegerObjectEntryValue/hasDefault"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PDFModel.ecore#//IntegerObjectEntryValue/defaultValue"/>
+    </genClasses>
+    <genClasses ecoreClass="PDFModel.ecore#//IntegerValidationRule"/>
+    <genClasses ecoreClass="PDFModel.ecore#//IntegerInclusiveRangeValidationRule">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PDFModel.ecore#//IntegerInclusiveRangeValidationRule/lowerBound"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PDFModel.ecore#//IntegerInclusiveRangeValidationRule/upperBound"/>
+    </genClasses>
+    <genClasses ecoreClass="PDFModel.ecore#//IntegerValuesValidationRule">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PDFModel.ecore#//IntegerValuesValidationRule/value"/>
+    </genClasses>
+    <genClasses ecoreClass="PDFModel.ecore#//IntegerGreaterValidationRule">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PDFModel.ecore#//IntegerGreaterValidationRule/minValue"/>
+    </genClasses>
+    <genClasses ecoreClass="PDFModel.ecore#//IntegerGreaterEqualsValidationRule">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PDFModel.ecore#//IntegerGreaterEqualsValidationRule/minValue"/>
+    </genClasses>
+    <genClasses ecoreClass="PDFModel.ecore#//IntegerValuesValidationRuleEntry">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PDFModel.ecore#//IntegerValuesValidationRuleEntry/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//IntegerValuesValidationRuleEntry/since"/>
+    </genClasses>
+    <genClasses ecoreClass="PDFModel.ecore#//RealObjectEntryValue">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//RealObjectEntryValue/hasMustBe"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PDFModel.ecore#//RealObjectEntryValue/requiredValue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//RealObjectEntryValue/hasDefault"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PDFModel.ecore#//RealObjectEntryValue/defaultValue"/>
+    </genClasses>
+    <genClasses ecoreClass="PDFModel.ecore#//NameTreeEntryValue"/>
+    <genClasses ecoreClass="PDFModel.ecore#//NumberTreeEntryValue"/>
+    <genClasses ecoreClass="PDFModel.ecore#//ArrayEntryValue">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PDFModel.ecore#//ArrayEntryValue/rule"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//ArrayEntryValue/indirectReference"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PDFModel.ecore#//ArrayEntryValue/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//ArrayEntryValue/requiresCustomValidation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//ArrayEntryValue/requiresCustomDefault"/>
+    </genClasses>
+    <genClasses ecoreClass="PDFModel.ecore#//ArrayValidationRule"/>
+    <genClasses ecoreClass="PDFModel.ecore#//ArrayLengthValidationRule">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//ArrayLengthValidationRule/length"/>
+    </genClasses>
+    <genClasses ecoreClass="PDFModel.ecore#//ObjectEntryValue"/>
+    <genClasses ecoreClass="PDFModel.ecore#//MappingDictEntryValue">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PDFModel.ecore#//MappingDictEntryValue/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//MappingDictEntryValue/requiresCustomValidation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//MappingDictEntryValue/requiresCustomDefault"/>
+    </genClasses>
+    <genClasses ecoreClass="PDFModel.ecore#//StringEntryValue">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//StringEntryValue/textString"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//StringEntryValue/asciiString"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//StringEntryValue/byteString"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PDFModel.ecore#//StringEntryValue/rule"/>
+    </genClasses>
+    <genClasses ecoreClass="PDFModel.ecore#//StringValidationRule"/>
+    <genClasses ecoreClass="PDFModel.ecore#//StringLengthValidationRule">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PDFModel.ecore#//StringLengthValidationRule/length"/>
+    </genClasses>
+    <genClasses ecoreClass="PDFModel.ecore#//AlternativeEntryValue">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PDFModel.ecore#//AlternativeEntryValue/options"/>
+    </genClasses>
+    <genClasses ecoreClass="PDFModel.ecore#//BooleanEntryValue">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//BooleanEntryValue/hasMustBe"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//BooleanEntryValue/requiredValue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//BooleanEntryValue/hasDefault"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//BooleanEntryValue/defaultValue"/>
+    </genClasses>
+    <genClasses ecoreClass="PDFModel.ecore#//ReferenceEntryValue"/>
+    <genClasses ecoreClass="PDFModel.ecore#//ParentReferenceEntryValue">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference PDFModel.ecore#//ParentReferenceEntryValue/parentType"/>
+    </genClasses>
+    <genClasses ecoreClass="PDFModel.ecore#//DictionaryObjectEntryValue"/>
+    <genClasses ecoreClass="PDFModel.ecore#//DictionaryDeclarationEntryValue">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference PDFModel.ecore#//DictionaryDeclarationEntryValue/target"/>
+    </genClasses>
+    <genClasses ecoreClass="PDFModel.ecore#//ArrayMappedEntryValue">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference PDFModel.ecore#//ArrayMappedEntryValue/target"/>
+    </genClasses>
+    <genClasses ecoreClass="PDFModel.ecore#//BitFlagsEntryValue">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference PDFModel.ecore#//BitFlagsEntryValue/target"/>
+    </genClasses>
+    <genClasses ecoreClass="PDFModel.ecore#//DateEntryValue"/>
+    <genClasses ecoreClass="PDFModel.ecore#//NameEnumEntryValue">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference PDFModel.ecore#//NameEnumEntryValue/target"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//NameEnumEntryValue/hasMustBe"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//NameEnumEntryValue/requiredValue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//NameEnumEntryValue/hasDefault"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//NameEnumEntryValue/defaultValue"/>
+    </genClasses>
+    <genClasses ecoreClass="PDFModel.ecore#//NumberLiteral"/>
+    <genClasses ecoreClass="PDFModel.ecore#//IntLiteral">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//IntLiteral/value"/>
+    </genClasses>
+    <genClasses ecoreClass="PDFModel.ecore#//RealLiteral">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//RealLiteral/value"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

@@ -1,0 +1,7 @@
+pdf-model/src-gen/**
+pdf-model/bin/**
+com.levigo.jadice.*/bin/**
+**/plugin.xml_gen
+*.java._trace
+com.levigo.jadice.tools.codegen.generator/whatever.txt
+/.project

@@ -1,0 +1,27 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: com.levigo.jadice.tools.pdf.modelgen.ui
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0
+Bundle-SymbolicName: com.levigo.jadice.tools.pdf.modelgen.ui; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: com.levigo.jadice.tools.pdf.modelgen;visibility:=reexport,
+ org.eclipse.xtext.ui,
+ org.eclipse.ui.editors;bundle-version="3.5.0",
+ org.eclipse.ui.ide;bundle-version="3.5.0",
+ org.eclipse.xtext.ui.shared,
+ org.eclipse.ui,
+ org.eclipse.xtext.builder,
+ org.antlr.runtime,
+ org.eclipse.xtext.common.types.ui,
+ org.eclipse.xtext.xbase.ui,
+ org.eclipse.xtext.ui.codetemplates.ui,
+ org.eclipse.compare
+Import-Package: org.apache.log4j,
+ org.apache.commons.logging
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Export-Package: com.levigo.jadice.tools.pdf.modelgen.ui.contentassist.antlr,
+ com.levigo.jadice.tools.pdf.modelgen.ui.internal,
+ com.levigo.jadice.tools.pdf.modelgen.ui.contentassist,
+ com.levigo.jadice.tools.pdf.modelgen.ui.quickfix
+Bundle-Activator: com.levigo.jadice.tools.pdf.modelgen.ui.internal.PDFModelActivator

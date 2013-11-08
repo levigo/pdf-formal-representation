@@ -1,0 +1,318 @@
+grammar com.levigo.jadice.tools.pdf.modelgen.PDFModel with org.eclipse.xtext.common.Terminals
+
+import "http://www.eclipse.org/emf/2002/Ecore" as ecore
+generate pdfmodel "http://www.levigo.com/jadice/tools/pdf/modelgen/PDFModel"
+
+PDFModel:
+	config=ModelConfig
+	packages+=PackageDeclaration+;
+
+ModelConfig:
+	'config' '{'
+	'base-package' basePackage=QualifiedName ';'
+	coreTypesConfig=CoreTypesConfig
+	'}';
+
+CoreTypesConfig:
+	'core-types' '{'
+	'object' objectTypeName=QualifiedName ';'
+	'reference' referenceTypeName=QualifiedName ';'
+	'dictionary' dictionaryTypeName=QualifiedName ';'
+	'name' nameTypeName=QualifiedName ';'
+	'string' stringTypeName=QualifiedName ';'
+	'literal-string' literalStringTypeName=QualifiedName ';'
+	'hex-string' hexStringTypeName=QualifiedName ';'
+	'array' arrayTypeName=QualifiedName ';'
+	'boolean' booleanTypeName=QualifiedName ';'
+	'number' numberTypeName=QualifiedName ';'
+	'real' realTypeName=QualifiedName ';'
+	'integer' integerTypeName=QualifiedName ';'
+	'null' nullTypeName=QualifiedName ';'
+	'stream' streamTypeName=QualifiedName ';'
+	'}'
+	'util-types' '{'
+	'name-tree' nameTreeTypeName=QualifiedName ';'
+	'number-tree' numberTreeTypeName=QualifiedName ';'
+	'name-tree-parser' nameTreeParserTypeName=QualifiedName ';'
+	'number-tree-parser' numberTreeParserTypeName=QualifiedName ';'
+	'}';
+
+AbstractDeclaration:
+	DictionaryDeclaration | NameEnumDeclaration | ArrayMappedDeclaration | BitFlagsDeclaration;
+
+SpecificationReference:
+	'@spec-ref' 'ISO32000-1:2008' ',' section=SectionReference (',' 'table' table=INT)?;
+
+SectionReference:
+	'section' section=STRING;
+
+ArrayMappedDeclaration:
+	'array-mapped' name=ValidID ('(' since=SinceVersion ')')? '{'
+	entries+=ArrayMappedEntry+
+	'}';
+
+AbstractEntry:
+	ArrayMappedEntry | DictionaryEntry
+;
+
+ArrayMappedEntry:
+	index=INT '->' name=ValidID cached?='cached'? required?='required'? nullable?='nullable'? 
+	indirectReference=IndirectReference? value=AbstractEntryValue ('(' since=SinceVersion ')')? 
+	requiresCustomValidation?='custom-validation'? requiresCustomDefault?='custom-default'? ';';
+
+
+DictionaryDeclaration:
+	('dict-obj'|stream?='stream-obj') name=ValidID ('extends' superTypes+=[DictionaryDeclaration|QualifiedName] (','
+	superTypes+=[DictionaryDeclaration|QualifiedName])*)? ('(' since=SinceVersion ')')? '{'
+	('config' '{'
+	(subtypeConfig=SubtypeConfig)?
+	'}')?
+	entries+=DictionaryEntry*
+	'}';
+
+SubtypeConfig:
+	'subtypes' candidates+=[DictionaryDeclaration|QualifiedName] (','
+	candidates+=[DictionaryDeclaration|QualifiedName])* ';'
+;
+
+//AbstractDictionarySubtypeDetector:
+//	NamedEntrySubtypeDetector | EntryExistsSubtypeDetector | IntegerEntryValueSubtypeDetector;
+//
+//NamedEntrySubtypeDetector:
+//	'name-detector' '{'
+//	'key' subtypeName=NAME_OBJECT ';'
+//	'subtypes' subtypes+=[DictionaryDeclaration|QualifiedName] (','
+//	subtypes+=[DictionaryDeclaration|QualifiedName])* ';'
+//	'}';
+//
+//EntryExistsSubtypeDetector:
+//	'entry-detector' '{'
+//	'key' entryKey=NAME_OBJECT ';'
+//	'subtype' subtype=[DictionaryDeclaration|QualifiedName] ';'
+//	'}';
+//
+//IntegerEntryValueSubtypeDetector:
+//	'int-value-detector' '{'
+//	'key' entryKey=NAME_OBJECT ';'
+//	'subtypes' '{' entries+=IntegerEntryValueSubtypeDetectorEntry+ '}'
+//	'}';
+//
+//IntegerEntryValueSubtypeDetectorEntry:
+//	intValue=IntLiteral '->' subtype=[DictionaryDeclaration|QualifiedName] ';';
+//
+//DictionaryDeclarationGlobalSubtypes:
+//	'subtypes' NAME_OBJECT;
+
+DictionaryEntry:
+	key=NAME_OBJECT ('as' alias=ID)? cached?='cached'? required?='required'? inheritable?='inheritable'?
+	indirectReference=IndirectReference?
+	value=AbstractEntryValue requiresCustomValidation?='custom-validation'? requiresCustomDefault?='custom-default'? ('('
+	since=SinceVersion ')')? ';';
+
+PackageDeclaration:	
+	'package' name=QualifiedName '{'
+	elements+=AbstractDeclaration*
+	'}';
+
+BitFlagsDeclaration:
+	specificationReference=SpecificationReference
+	'bit-flags' name=ValidID ('(' since=SinceVersion ')')? '{'
+	declarations+=BitFlagsDeclarationPart+
+	'}';
+
+BitFlagsDeclarationPart:
+	index=INT '->' name=ValidID ('(' since=SinceVersion ')')? ';';
+
+NameEnumDeclaration:
+	'name-enum' name=ValidID ('(' since=SinceVersion ')')? '{'
+	declarations+=NameEnumDeclarationPart (',' declarations+=NameEnumDeclarationPart)* (',')? // ignore trailing comma, just like Java does 
+	'}';
+
+NameEnumDeclarationPart:
+	constant=NAME_OBJECT ('as' alias=ID)? ('(' since=SinceVersion ')')?;
+
+AbstractEntryValue:
+	NullObjectEntryValue | NameTreeEntryValue | NumberTreeEntryValue | NameObjectEntryValue | NumberObjectEntryValue |
+	IntegerObjectEntryValue | RealObjectEntryValue | NameEnumEntryValue | ReferenceEntryValue | ParentReferenceEntryValue
+	| DictionaryDeclarationEntryValue | DictionaryObjectEntryValue | ArrayEntryValue | MappingDictEntryValue |
+	BooleanEntryValue | DateEntryValue | AlternativeEntryValue | ObjectEntryValue | StringEntryValue |
+	ArrayMappedEntryValue | BitFlagsEntryValue;
+
+NullObjectEntryValue:
+	{NullObjectEntryValue} 'null';
+
+NameObjectEntryValue:
+	{NameObjectEntryValue} 'name' ((hasMustBe?='must-be' requiredValue=NAME_OBJECT) | (hasDefault?='default' defaultValue=NAME_OBJECT))?;
+
+NumberObjectEntryValue:
+	{NumberObjectEntryValue} 'num' ('[' rule=NumberValidationRule ']')? ((hasMustBe?='must-be' requiredValue=NumberLiteral) |
+	(hasDefault?='default' defaultValue=NumberLiteral))?;
+
+NumberValidationRule:
+	NumberInclusiveRangeValidationRule | NumberGreaterValidationRule | NumberGreaterEqualsValidationRule |
+	NumberValuesValidationRule;
+
+NumberInclusiveRangeValidationRule:
+	'range-incl' lowerBound=NumberLiteral 'to' upperBound=NumberLiteral;
+
+NumberGreaterValidationRule:
+	'greater' minValue=NumberLiteral;
+
+NumberGreaterEqualsValidationRule:
+	'greater-equals' minValue=NumberLiteral;
+
+NumberValuesValidationRule:
+	'values' value+=NumberValuesValidationRuleEntry (',' value+=NumberValuesValidationRuleEntry)*;
+
+NumberValuesValidationRuleEntry:
+	value=NumberLiteral ('(' since=SinceVersion ')')?;
+
+IntegerObjectEntryValue:
+	{IntegerObjectEntryValue} 'int' ('[' rule=IntegerValidationRule ']')? ((hasMustBe?='must-be' requiredValue=IntLiteral)
+	|
+	(hasDefault?='default'
+	defaultValue=IntLiteral))?;
+
+IntegerValidationRule:
+	IntegerInclusiveRangeValidationRule | IntegerValuesValidationRule | IntegerGreaterValidationRule |
+	IntegerGreaterEqualsValidationRule;
+
+IntegerInclusiveRangeValidationRule:
+	'range-incl' lowerBound=IntLiteral 'to' upperBound=IntLiteral;
+
+IntegerValuesValidationRule:
+	'values' value+=IntegerValuesValidationRuleEntry (',' value+=IntegerValuesValidationRuleEntry)*;
+
+IntegerGreaterValidationRule:
+	'greater' minValue=IntLiteral;
+
+IntegerGreaterEqualsValidationRule:
+	'greater-equals' minValue=NumberLiteral;
+
+IntegerValuesValidationRuleEntry:
+	value=IntLiteral ('(' since=SinceVersion ')')?;
+
+RealObjectEntryValue:
+	{RealObjectEntryValue} 'real' ((hasMustBe?='must-be' requiredValue=RealLiteral) | (hasDefault?='default' defaultValue=RealLiteral))?;
+
+NameTreeEntryValue:
+	{NameTreeEntryValue} 'name-tree';
+
+NumberTreeEntryValue:
+	{NumberTreeEntryValue} 'number-tree';
+
+ArrayEntryValue:
+	'array' ('[' rule=ArrayValidationRule ']')? '<' indirectReference=IndirectReference? type=AbstractEntryValue
+	requiresCustomValidation?='custom-validation'? requiresCustomDefault?='custom-default'? '>';
+
+ArrayValidationRule:
+	ArrayLengthValidationRule;
+
+ArrayLengthValidationRule:
+	'length' length=INT;
+
+ObjectEntryValue:
+	'object' {ObjectEntryValue};
+
+MappingDictEntryValue:
+	'mapping-dict' '<' type=AbstractEntryValue requiresCustomValidation?='custom-validation'?
+	requiresCustomDefault?='custom-default'? '>';
+
+StringEntryValue:
+	(textString?='text-string' | asciiString?='ascii-string' | byteString?='byte-string') ('[' rule=StringValidationRule
+	']')?;
+
+StringValidationRule:
+	StringLengthValidationRule;
+
+StringLengthValidationRule:
+	'length' length=IntLiteral;
+
+AlternativeEntryValue:
+	'(' options+=AbstractEntryValue ('|' options+=AbstractEntryValue)+ ')';
+
+BooleanEntryValue:
+	'bool' {BooleanEntryValue} ((hasMustBe?='must-be' requiredValue=Bool) | (hasDefault?='default' defaultValue=Bool))?;
+
+ReferenceEntryValue:
+	'ref' {ReferenceEntryValue};
+
+ParentReferenceEntryValue:
+	'parent-ref' parentType=[DictionaryDeclaration|QualifiedName];
+
+	/**
+ * This is a rule that representat a simple dictionary with no spcific type.
+ */
+DictionaryObjectEntryValue:
+	{DictionaryObjectEntryValue} 'dict';
+
+	/**
+ * Reference to a high level dictionary object 
+ */
+DictionaryDeclarationEntryValue:
+	'dict-obj' target=[DictionaryDeclaration|QualifiedName];
+
+ArrayMappedEntryValue:
+	'array-mapped' target=[ArrayMappedDeclaration|QualifiedName];
+
+BitFlagsEntryValue:
+	'bit-flags' target=[BitFlagsDeclaration|QualifiedName];
+
+DateEntryValue:
+	{DateEntryValue} 'date';
+
+NameEnumEntryValue:
+	'name-enum' target=[NameEnumDeclaration|QualifiedName] ((hasMustBe?='must-be' requiredValue=NAME_OBJECT) | (hasDefault?='default'
+	defaultValue=NAME_OBJECT))?;
+
+NumberLiteral:
+	IntLiteral | RealLiteral;
+
+IntLiteral:
+	value=INT;
+
+RealLiteral:
+	value=DOUBLE;
+
+enum IndirectReference:
+	UNDEFINED |
+	INDIRECT_SHALL='indirect-shall' |
+	INDIRECT_SHALL_NOT='indirect-shall-not' |
+	INDIRECT_SHOULD='indirect-should';
+
+enum SinceVersion:
+	UNDEFINED |
+	PDF_10='pdf-1.0' |
+	PDF_11='pdf-1.1' |
+	PDF_12='pdf-1.2' |
+	PDF_13='pdf-1.3' |
+	PDF_14='pdf-1.4' |
+	PDF_15='pdf-1.5' |
+	PDF_16='pdf-1.6' |
+	PDF_17='pdf-1.7' |
+	PDF_32000_1='32000-1' |
+	PDF_20='pdf-2.0' |
+	PDF_32000_2='32000-2';
+
+terminal NAME_OBJECT:
+	'/' ('a'..'z' | 'A'..'Z' | '0'..'9' | '_' | ('#' '0'..'9' '0'..'9'))+;
+
+enum Bool:
+	TRUE='true' | FALSE='false';
+
+terminal INT returns ecore::EInt:
+	'0' | ('1'..'9' ('0'..'9')*);
+
+	// @see http://java.sun.com/javase/6/docs/api/java/lang/Double.html#valueOf(java.lang.String)
+terminal DOUBLE returns ecore::EDouble:
+	'1'..'9' ('0'..'9')* ('.' '0'..'9'+)? (('E' | 'e') ('+' | '-')? '0'..'9'+)?
+	| '0' ('.' '0'..'9'+)? (('E' | 'e') ('+' | '-')? '0'..'9'+)?;
+
+QualifiedName:
+	ValidID ('.' ValidID)*;
+
+ValidID:
+	ID;
+
+terminal ID:
+	'^'? ('a'..'z' | 'A'..'Z' | '$' | '_') ('a'..'z' | 'A'..'Z' | '$' | '_' | '0'..'9')*;
