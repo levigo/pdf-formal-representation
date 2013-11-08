@@ -68,22 +68,13 @@ public interface PdfmodelPackage extends EPackage
   int PDF_MODEL = 0;
 
   /**
-   * The feature id for the '<em><b>Config</b></em>' containment reference.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int PDF_MODEL__CONFIG = 0;
-
-  /**
    * The feature id for the '<em><b>Packages</b></em>' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int PDF_MODEL__PACKAGES = 1;
+  int PDF_MODEL__PACKAGES = 0;
 
   /**
    * The number of structural features of the '<em>PDF Model</em>' class.
@@ -92,225 +83,7 @@ public interface PdfmodelPackage extends EPackage
    * @generated
    * @ordered
    */
-  int PDF_MODEL_FEATURE_COUNT = 2;
-
-  /**
-   * The meta object id for the '{@link com.levigo.jadice.tools.pdf.modelgen.pdfmodel.impl.ModelConfigImpl <em>Model Config</em>}' class.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.impl.ModelConfigImpl
-   * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.impl.PdfmodelPackageImpl#getModelConfig()
-   * @generated
-   */
-  int MODEL_CONFIG = 1;
-
-  /**
-   * The feature id for the '<em><b>Base Package</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int MODEL_CONFIG__BASE_PACKAGE = 0;
-
-  /**
-   * The feature id for the '<em><b>Core Types Config</b></em>' containment reference.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int MODEL_CONFIG__CORE_TYPES_CONFIG = 1;
-
-  /**
-   * The number of structural features of the '<em>Model Config</em>' class.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int MODEL_CONFIG_FEATURE_COUNT = 2;
-
-  /**
-   * The meta object id for the '{@link com.levigo.jadice.tools.pdf.modelgen.pdfmodel.impl.CoreTypesConfigImpl <em>Core Types Config</em>}' class.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.impl.CoreTypesConfigImpl
-   * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.impl.PdfmodelPackageImpl#getCoreTypesConfig()
-   * @generated
-   */
-  int CORE_TYPES_CONFIG = 2;
-
-  /**
-   * The feature id for the '<em><b>Object Type Name</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int CORE_TYPES_CONFIG__OBJECT_TYPE_NAME = 0;
-
-  /**
-   * The feature id for the '<em><b>Reference Type Name</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int CORE_TYPES_CONFIG__REFERENCE_TYPE_NAME = 1;
-
-  /**
-   * The feature id for the '<em><b>Dictionary Type Name</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int CORE_TYPES_CONFIG__DICTIONARY_TYPE_NAME = 2;
-
-  /**
-   * The feature id for the '<em><b>Name Type Name</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int CORE_TYPES_CONFIG__NAME_TYPE_NAME = 3;
-
-  /**
-   * The feature id for the '<em><b>String Type Name</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int CORE_TYPES_CONFIG__STRING_TYPE_NAME = 4;
-
-  /**
-   * The feature id for the '<em><b>Literal String Type Name</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int CORE_TYPES_CONFIG__LITERAL_STRING_TYPE_NAME = 5;
-
-  /**
-   * The feature id for the '<em><b>Hex String Type Name</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int CORE_TYPES_CONFIG__HEX_STRING_TYPE_NAME = 6;
-
-  /**
-   * The feature id for the '<em><b>Array Type Name</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int CORE_TYPES_CONFIG__ARRAY_TYPE_NAME = 7;
-
-  /**
-   * The feature id for the '<em><b>Boolean Type Name</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int CORE_TYPES_CONFIG__BOOLEAN_TYPE_NAME = 8;
-
-  /**
-   * The feature id for the '<em><b>Number Type Name</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int CORE_TYPES_CONFIG__NUMBER_TYPE_NAME = 9;
-
-  /**
-   * The feature id for the '<em><b>Real Type Name</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int CORE_TYPES_CONFIG__REAL_TYPE_NAME = 10;
-
-  /**
-   * The feature id for the '<em><b>Integer Type Name</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int CORE_TYPES_CONFIG__INTEGER_TYPE_NAME = 11;
-
-  /**
-   * The feature id for the '<em><b>Null Type Name</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int CORE_TYPES_CONFIG__NULL_TYPE_NAME = 12;
-
-  /**
-   * The feature id for the '<em><b>Stream Type Name</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int CORE_TYPES_CONFIG__STREAM_TYPE_NAME = 13;
-
-  /**
-   * The feature id for the '<em><b>Name Tree Type Name</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int CORE_TYPES_CONFIG__NAME_TREE_TYPE_NAME = 14;
-
-  /**
-   * The feature id for the '<em><b>Number Tree Type Name</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int CORE_TYPES_CONFIG__NUMBER_TREE_TYPE_NAME = 15;
-
-  /**
-   * The feature id for the '<em><b>Name Tree Parser Type Name</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int CORE_TYPES_CONFIG__NAME_TREE_PARSER_TYPE_NAME = 16;
-
-  /**
-   * The feature id for the '<em><b>Number Tree Parser Type Name</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int CORE_TYPES_CONFIG__NUMBER_TREE_PARSER_TYPE_NAME = 17;
-
-  /**
-   * The number of structural features of the '<em>Core Types Config</em>' class.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int CORE_TYPES_CONFIG_FEATURE_COUNT = 18;
+  int PDF_MODEL_FEATURE_COUNT = 1;
 
   /**
    * The meta object id for the '{@link com.levigo.jadice.tools.pdf.modelgen.pdfmodel.impl.AbstractDeclarationImpl <em>Abstract Declaration</em>}' class.
@@ -320,7 +93,7 @@ public interface PdfmodelPackage extends EPackage
    * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.impl.PdfmodelPackageImpl#getAbstractDeclaration()
    * @generated
    */
-  int ABSTRACT_DECLARATION = 3;
+  int ABSTRACT_DECLARATION = 1;
 
   /**
    * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -357,7 +130,7 @@ public interface PdfmodelPackage extends EPackage
    * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.impl.PdfmodelPackageImpl#getSpecificationReference()
    * @generated
    */
-  int SPECIFICATION_REFERENCE = 4;
+  int SPECIFICATION_REFERENCE = 2;
 
   /**
    * The feature id for the '<em><b>Section</b></em>' containment reference.
@@ -394,7 +167,7 @@ public interface PdfmodelPackage extends EPackage
    * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.impl.PdfmodelPackageImpl#getSectionReference()
    * @generated
    */
-  int SECTION_REFERENCE = 5;
+  int SECTION_REFERENCE = 3;
 
   /**
    * The feature id for the '<em><b>Section</b></em>' attribute.
@@ -422,7 +195,7 @@ public interface PdfmodelPackage extends EPackage
    * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.impl.PdfmodelPackageImpl#getArrayMappedDeclaration()
    * @generated
    */
-  int ARRAY_MAPPED_DECLARATION = 6;
+  int ARRAY_MAPPED_DECLARATION = 4;
 
   /**
    * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -468,7 +241,7 @@ public interface PdfmodelPackage extends EPackage
    * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.impl.PdfmodelPackageImpl#getAbstractEntry()
    * @generated
    */
-  int ABSTRACT_ENTRY = 7;
+  int ABSTRACT_ENTRY = 5;
 
   /**
    * The feature id for the '<em><b>Cached</b></em>' attribute.
@@ -550,7 +323,7 @@ public interface PdfmodelPackage extends EPackage
    * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.impl.PdfmodelPackageImpl#getArrayMappedEntry()
    * @generated
    */
-  int ARRAY_MAPPED_ENTRY = 8;
+  int ARRAY_MAPPED_ENTRY = 6;
 
   /**
    * The feature id for the '<em><b>Cached</b></em>' attribute.
@@ -659,7 +432,7 @@ public interface PdfmodelPackage extends EPackage
    * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.impl.PdfmodelPackageImpl#getDictionaryDeclaration()
    * @generated
    */
-  int DICTIONARY_DECLARATION = 9;
+  int DICTIONARY_DECLARATION = 7;
 
   /**
    * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -732,7 +505,7 @@ public interface PdfmodelPackage extends EPackage
    * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.impl.PdfmodelPackageImpl#getSubtypeConfig()
    * @generated
    */
-  int SUBTYPE_CONFIG = 10;
+  int SUBTYPE_CONFIG = 8;
 
   /**
    * The feature id for the '<em><b>Candidates</b></em>' reference list.
@@ -760,7 +533,7 @@ public interface PdfmodelPackage extends EPackage
    * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.impl.PdfmodelPackageImpl#getDictionaryEntry()
    * @generated
    */
-  int DICTIONARY_ENTRY = 11;
+  int DICTIONARY_ENTRY = 9;
 
   /**
    * The feature id for the '<em><b>Cached</b></em>' attribute.
@@ -869,7 +642,7 @@ public interface PdfmodelPackage extends EPackage
    * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.impl.PdfmodelPackageImpl#getPackageDeclaration()
    * @generated
    */
-  int PACKAGE_DECLARATION = 12;
+  int PACKAGE_DECLARATION = 10;
 
   /**
    * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -906,7 +679,7 @@ public interface PdfmodelPackage extends EPackage
    * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.impl.PdfmodelPackageImpl#getBitFlagsDeclaration()
    * @generated
    */
-  int BIT_FLAGS_DECLARATION = 13;
+  int BIT_FLAGS_DECLARATION = 11;
 
   /**
    * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -961,7 +734,7 @@ public interface PdfmodelPackage extends EPackage
    * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.impl.PdfmodelPackageImpl#getBitFlagsDeclarationPart()
    * @generated
    */
-  int BIT_FLAGS_DECLARATION_PART = 14;
+  int BIT_FLAGS_DECLARATION_PART = 12;
 
   /**
    * The feature id for the '<em><b>Index</b></em>' attribute.
@@ -1007,7 +780,7 @@ public interface PdfmodelPackage extends EPackage
    * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.impl.PdfmodelPackageImpl#getNameEnumDeclaration()
    * @generated
    */
-  int NAME_ENUM_DECLARATION = 15;
+  int NAME_ENUM_DECLARATION = 13;
 
   /**
    * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1053,7 +826,7 @@ public interface PdfmodelPackage extends EPackage
    * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.impl.PdfmodelPackageImpl#getNameEnumDeclarationPart()
    * @generated
    */
-  int NAME_ENUM_DECLARATION_PART = 16;
+  int NAME_ENUM_DECLARATION_PART = 14;
 
   /**
    * The feature id for the '<em><b>Constant</b></em>' attribute.
@@ -1099,7 +872,7 @@ public interface PdfmodelPackage extends EPackage
    * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.impl.PdfmodelPackageImpl#getAbstractEntryValue()
    * @generated
    */
-  int ABSTRACT_ENTRY_VALUE = 17;
+  int ABSTRACT_ENTRY_VALUE = 15;
 
   /**
    * The number of structural features of the '<em>Abstract Entry Value</em>' class.
@@ -1118,7 +891,7 @@ public interface PdfmodelPackage extends EPackage
    * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.impl.PdfmodelPackageImpl#getNullObjectEntryValue()
    * @generated
    */
-  int NULL_OBJECT_ENTRY_VALUE = 18;
+  int NULL_OBJECT_ENTRY_VALUE = 16;
 
   /**
    * The number of structural features of the '<em>Null Object Entry Value</em>' class.
@@ -1137,7 +910,7 @@ public interface PdfmodelPackage extends EPackage
    * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.impl.PdfmodelPackageImpl#getNameObjectEntryValue()
    * @generated
    */
-  int NAME_OBJECT_ENTRY_VALUE = 19;
+  int NAME_OBJECT_ENTRY_VALUE = 17;
 
   /**
    * The feature id for the '<em><b>Has Must Be</b></em>' attribute.
@@ -1192,7 +965,7 @@ public interface PdfmodelPackage extends EPackage
    * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.impl.PdfmodelPackageImpl#getNumberObjectEntryValue()
    * @generated
    */
-  int NUMBER_OBJECT_ENTRY_VALUE = 20;
+  int NUMBER_OBJECT_ENTRY_VALUE = 18;
 
   /**
    * The feature id for the '<em><b>Rule</b></em>' containment reference.
@@ -1256,7 +1029,7 @@ public interface PdfmodelPackage extends EPackage
    * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.impl.PdfmodelPackageImpl#getNumberValidationRule()
    * @generated
    */
-  int NUMBER_VALIDATION_RULE = 21;
+  int NUMBER_VALIDATION_RULE = 19;
 
   /**
    * The number of structural features of the '<em>Number Validation Rule</em>' class.
@@ -1275,7 +1048,7 @@ public interface PdfmodelPackage extends EPackage
    * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.impl.PdfmodelPackageImpl#getNumberInclusiveRangeValidationRule()
    * @generated
    */
-  int NUMBER_INCLUSIVE_RANGE_VALIDATION_RULE = 22;
+  int NUMBER_INCLUSIVE_RANGE_VALIDATION_RULE = 20;
 
   /**
    * The feature id for the '<em><b>Lower Bound</b></em>' containment reference.
@@ -1312,7 +1085,7 @@ public interface PdfmodelPackage extends EPackage
    * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.impl.PdfmodelPackageImpl#getNumberGreaterValidationRule()
    * @generated
    */
-  int NUMBER_GREATER_VALIDATION_RULE = 23;
+  int NUMBER_GREATER_VALIDATION_RULE = 21;
 
   /**
    * The feature id for the '<em><b>Min Value</b></em>' containment reference.
@@ -1340,7 +1113,7 @@ public interface PdfmodelPackage extends EPackage
    * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.impl.PdfmodelPackageImpl#getNumberGreaterEqualsValidationRule()
    * @generated
    */
-  int NUMBER_GREATER_EQUALS_VALIDATION_RULE = 24;
+  int NUMBER_GREATER_EQUALS_VALIDATION_RULE = 22;
 
   /**
    * The feature id for the '<em><b>Min Value</b></em>' containment reference.
@@ -1368,7 +1141,7 @@ public interface PdfmodelPackage extends EPackage
    * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.impl.PdfmodelPackageImpl#getNumberValuesValidationRule()
    * @generated
    */
-  int NUMBER_VALUES_VALIDATION_RULE = 25;
+  int NUMBER_VALUES_VALIDATION_RULE = 23;
 
   /**
    * The feature id for the '<em><b>Value</b></em>' containment reference list.
@@ -1396,7 +1169,7 @@ public interface PdfmodelPackage extends EPackage
    * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.impl.PdfmodelPackageImpl#getNumberValuesValidationRuleEntry()
    * @generated
    */
-  int NUMBER_VALUES_VALIDATION_RULE_ENTRY = 26;
+  int NUMBER_VALUES_VALIDATION_RULE_ENTRY = 24;
 
   /**
    * The feature id for the '<em><b>Value</b></em>' containment reference.
@@ -1433,7 +1206,7 @@ public interface PdfmodelPackage extends EPackage
    * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.impl.PdfmodelPackageImpl#getIntegerObjectEntryValue()
    * @generated
    */
-  int INTEGER_OBJECT_ENTRY_VALUE = 27;
+  int INTEGER_OBJECT_ENTRY_VALUE = 25;
 
   /**
    * The feature id for the '<em><b>Rule</b></em>' containment reference.
@@ -1497,7 +1270,7 @@ public interface PdfmodelPackage extends EPackage
    * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.impl.PdfmodelPackageImpl#getIntegerValidationRule()
    * @generated
    */
-  int INTEGER_VALIDATION_RULE = 28;
+  int INTEGER_VALIDATION_RULE = 26;
 
   /**
    * The number of structural features of the '<em>Integer Validation Rule</em>' class.
@@ -1516,7 +1289,7 @@ public interface PdfmodelPackage extends EPackage
    * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.impl.PdfmodelPackageImpl#getIntegerInclusiveRangeValidationRule()
    * @generated
    */
-  int INTEGER_INCLUSIVE_RANGE_VALIDATION_RULE = 29;
+  int INTEGER_INCLUSIVE_RANGE_VALIDATION_RULE = 27;
 
   /**
    * The feature id for the '<em><b>Lower Bound</b></em>' containment reference.
@@ -1553,7 +1326,7 @@ public interface PdfmodelPackage extends EPackage
    * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.impl.PdfmodelPackageImpl#getIntegerValuesValidationRule()
    * @generated
    */
-  int INTEGER_VALUES_VALIDATION_RULE = 30;
+  int INTEGER_VALUES_VALIDATION_RULE = 28;
 
   /**
    * The feature id for the '<em><b>Value</b></em>' containment reference list.
@@ -1581,7 +1354,7 @@ public interface PdfmodelPackage extends EPackage
    * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.impl.PdfmodelPackageImpl#getIntegerGreaterValidationRule()
    * @generated
    */
-  int INTEGER_GREATER_VALIDATION_RULE = 31;
+  int INTEGER_GREATER_VALIDATION_RULE = 29;
 
   /**
    * The feature id for the '<em><b>Min Value</b></em>' containment reference.
@@ -1609,7 +1382,7 @@ public interface PdfmodelPackage extends EPackage
    * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.impl.PdfmodelPackageImpl#getIntegerGreaterEqualsValidationRule()
    * @generated
    */
-  int INTEGER_GREATER_EQUALS_VALIDATION_RULE = 32;
+  int INTEGER_GREATER_EQUALS_VALIDATION_RULE = 30;
 
   /**
    * The feature id for the '<em><b>Min Value</b></em>' containment reference.
@@ -1637,7 +1410,7 @@ public interface PdfmodelPackage extends EPackage
    * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.impl.PdfmodelPackageImpl#getIntegerValuesValidationRuleEntry()
    * @generated
    */
-  int INTEGER_VALUES_VALIDATION_RULE_ENTRY = 33;
+  int INTEGER_VALUES_VALIDATION_RULE_ENTRY = 31;
 
   /**
    * The feature id for the '<em><b>Value</b></em>' containment reference.
@@ -1674,7 +1447,7 @@ public interface PdfmodelPackage extends EPackage
    * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.impl.PdfmodelPackageImpl#getRealObjectEntryValue()
    * @generated
    */
-  int REAL_OBJECT_ENTRY_VALUE = 34;
+  int REAL_OBJECT_ENTRY_VALUE = 32;
 
   /**
    * The feature id for the '<em><b>Has Must Be</b></em>' attribute.
@@ -1729,7 +1502,7 @@ public interface PdfmodelPackage extends EPackage
    * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.impl.PdfmodelPackageImpl#getNameTreeEntryValue()
    * @generated
    */
-  int NAME_TREE_ENTRY_VALUE = 35;
+  int NAME_TREE_ENTRY_VALUE = 33;
 
   /**
    * The number of structural features of the '<em>Name Tree Entry Value</em>' class.
@@ -1748,7 +1521,7 @@ public interface PdfmodelPackage extends EPackage
    * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.impl.PdfmodelPackageImpl#getNumberTreeEntryValue()
    * @generated
    */
-  int NUMBER_TREE_ENTRY_VALUE = 36;
+  int NUMBER_TREE_ENTRY_VALUE = 34;
 
   /**
    * The number of structural features of the '<em>Number Tree Entry Value</em>' class.
@@ -1767,7 +1540,7 @@ public interface PdfmodelPackage extends EPackage
    * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.impl.PdfmodelPackageImpl#getArrayEntryValue()
    * @generated
    */
-  int ARRAY_ENTRY_VALUE = 37;
+  int ARRAY_ENTRY_VALUE = 35;
 
   /**
    * The feature id for the '<em><b>Rule</b></em>' containment reference.
@@ -1831,7 +1604,7 @@ public interface PdfmodelPackage extends EPackage
    * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.impl.PdfmodelPackageImpl#getArrayValidationRule()
    * @generated
    */
-  int ARRAY_VALIDATION_RULE = 38;
+  int ARRAY_VALIDATION_RULE = 36;
 
   /**
    * The number of structural features of the '<em>Array Validation Rule</em>' class.
@@ -1850,7 +1623,7 @@ public interface PdfmodelPackage extends EPackage
    * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.impl.PdfmodelPackageImpl#getArrayLengthValidationRule()
    * @generated
    */
-  int ARRAY_LENGTH_VALIDATION_RULE = 39;
+  int ARRAY_LENGTH_VALIDATION_RULE = 37;
 
   /**
    * The feature id for the '<em><b>Length</b></em>' attribute.
@@ -1878,7 +1651,7 @@ public interface PdfmodelPackage extends EPackage
    * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.impl.PdfmodelPackageImpl#getObjectEntryValue()
    * @generated
    */
-  int OBJECT_ENTRY_VALUE = 40;
+  int OBJECT_ENTRY_VALUE = 38;
 
   /**
    * The number of structural features of the '<em>Object Entry Value</em>' class.
@@ -1897,7 +1670,7 @@ public interface PdfmodelPackage extends EPackage
    * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.impl.PdfmodelPackageImpl#getMappingDictEntryValue()
    * @generated
    */
-  int MAPPING_DICT_ENTRY_VALUE = 41;
+  int MAPPING_DICT_ENTRY_VALUE = 39;
 
   /**
    * The feature id for the '<em><b>Type</b></em>' containment reference.
@@ -1943,7 +1716,7 @@ public interface PdfmodelPackage extends EPackage
    * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.impl.PdfmodelPackageImpl#getStringEntryValue()
    * @generated
    */
-  int STRING_ENTRY_VALUE = 42;
+  int STRING_ENTRY_VALUE = 40;
 
   /**
    * The feature id for the '<em><b>Text String</b></em>' attribute.
@@ -1998,7 +1771,7 @@ public interface PdfmodelPackage extends EPackage
    * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.impl.PdfmodelPackageImpl#getStringValidationRule()
    * @generated
    */
-  int STRING_VALIDATION_RULE = 43;
+  int STRING_VALIDATION_RULE = 41;
 
   /**
    * The number of structural features of the '<em>String Validation Rule</em>' class.
@@ -2017,7 +1790,7 @@ public interface PdfmodelPackage extends EPackage
    * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.impl.PdfmodelPackageImpl#getStringLengthValidationRule()
    * @generated
    */
-  int STRING_LENGTH_VALIDATION_RULE = 44;
+  int STRING_LENGTH_VALIDATION_RULE = 42;
 
   /**
    * The feature id for the '<em><b>Length</b></em>' containment reference.
@@ -2045,7 +1818,7 @@ public interface PdfmodelPackage extends EPackage
    * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.impl.PdfmodelPackageImpl#getAlternativeEntryValue()
    * @generated
    */
-  int ALTERNATIVE_ENTRY_VALUE = 45;
+  int ALTERNATIVE_ENTRY_VALUE = 43;
 
   /**
    * The feature id for the '<em><b>Options</b></em>' containment reference list.
@@ -2073,7 +1846,7 @@ public interface PdfmodelPackage extends EPackage
    * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.impl.PdfmodelPackageImpl#getBooleanEntryValue()
    * @generated
    */
-  int BOOLEAN_ENTRY_VALUE = 46;
+  int BOOLEAN_ENTRY_VALUE = 44;
 
   /**
    * The feature id for the '<em><b>Has Must Be</b></em>' attribute.
@@ -2128,7 +1901,7 @@ public interface PdfmodelPackage extends EPackage
    * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.impl.PdfmodelPackageImpl#getReferenceEntryValue()
    * @generated
    */
-  int REFERENCE_ENTRY_VALUE = 47;
+  int REFERENCE_ENTRY_VALUE = 45;
 
   /**
    * The number of structural features of the '<em>Reference Entry Value</em>' class.
@@ -2147,7 +1920,7 @@ public interface PdfmodelPackage extends EPackage
    * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.impl.PdfmodelPackageImpl#getParentReferenceEntryValue()
    * @generated
    */
-  int PARENT_REFERENCE_ENTRY_VALUE = 48;
+  int PARENT_REFERENCE_ENTRY_VALUE = 46;
 
   /**
    * The feature id for the '<em><b>Parent Type</b></em>' reference.
@@ -2175,7 +1948,7 @@ public interface PdfmodelPackage extends EPackage
    * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.impl.PdfmodelPackageImpl#getDictionaryObjectEntryValue()
    * @generated
    */
-  int DICTIONARY_OBJECT_ENTRY_VALUE = 49;
+  int DICTIONARY_OBJECT_ENTRY_VALUE = 47;
 
   /**
    * The number of structural features of the '<em>Dictionary Object Entry Value</em>' class.
@@ -2194,7 +1967,7 @@ public interface PdfmodelPackage extends EPackage
    * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.impl.PdfmodelPackageImpl#getDictionaryDeclarationEntryValue()
    * @generated
    */
-  int DICTIONARY_DECLARATION_ENTRY_VALUE = 50;
+  int DICTIONARY_DECLARATION_ENTRY_VALUE = 48;
 
   /**
    * The feature id for the '<em><b>Target</b></em>' reference.
@@ -2222,7 +1995,7 @@ public interface PdfmodelPackage extends EPackage
    * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.impl.PdfmodelPackageImpl#getArrayMappedEntryValue()
    * @generated
    */
-  int ARRAY_MAPPED_ENTRY_VALUE = 51;
+  int ARRAY_MAPPED_ENTRY_VALUE = 49;
 
   /**
    * The feature id for the '<em><b>Target</b></em>' reference.
@@ -2250,7 +2023,7 @@ public interface PdfmodelPackage extends EPackage
    * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.impl.PdfmodelPackageImpl#getBitFlagsEntryValue()
    * @generated
    */
-  int BIT_FLAGS_ENTRY_VALUE = 52;
+  int BIT_FLAGS_ENTRY_VALUE = 50;
 
   /**
    * The feature id for the '<em><b>Target</b></em>' reference.
@@ -2278,7 +2051,7 @@ public interface PdfmodelPackage extends EPackage
    * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.impl.PdfmodelPackageImpl#getDateEntryValue()
    * @generated
    */
-  int DATE_ENTRY_VALUE = 53;
+  int DATE_ENTRY_VALUE = 51;
 
   /**
    * The number of structural features of the '<em>Date Entry Value</em>' class.
@@ -2297,7 +2070,7 @@ public interface PdfmodelPackage extends EPackage
    * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.impl.PdfmodelPackageImpl#getNameEnumEntryValue()
    * @generated
    */
-  int NAME_ENUM_ENTRY_VALUE = 54;
+  int NAME_ENUM_ENTRY_VALUE = 52;
 
   /**
    * The feature id for the '<em><b>Target</b></em>' reference.
@@ -2361,7 +2134,7 @@ public interface PdfmodelPackage extends EPackage
    * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.impl.PdfmodelPackageImpl#getNumberLiteral()
    * @generated
    */
-  int NUMBER_LITERAL = 55;
+  int NUMBER_LITERAL = 53;
 
   /**
    * The number of structural features of the '<em>Number Literal</em>' class.
@@ -2380,7 +2153,7 @@ public interface PdfmodelPackage extends EPackage
    * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.impl.PdfmodelPackageImpl#getIntLiteral()
    * @generated
    */
-  int INT_LITERAL = 56;
+  int INT_LITERAL = 54;
 
   /**
    * The feature id for the '<em><b>Value</b></em>' attribute.
@@ -2408,7 +2181,7 @@ public interface PdfmodelPackage extends EPackage
    * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.impl.PdfmodelPackageImpl#getRealLiteral()
    * @generated
    */
-  int REAL_LITERAL = 57;
+  int REAL_LITERAL = 55;
 
   /**
    * The feature id for the '<em><b>Value</b></em>' attribute.
@@ -2436,7 +2209,7 @@ public interface PdfmodelPackage extends EPackage
    * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.impl.PdfmodelPackageImpl#getIndirectReference()
    * @generated
    */
-  int INDIRECT_REFERENCE = 58;
+  int INDIRECT_REFERENCE = 56;
 
   /**
    * The meta object id for the '{@link com.levigo.jadice.tools.pdf.modelgen.pdfmodel.SinceVersion <em>Since Version</em>}' enum.
@@ -2446,7 +2219,7 @@ public interface PdfmodelPackage extends EPackage
    * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.impl.PdfmodelPackageImpl#getSinceVersion()
    * @generated
    */
-  int SINCE_VERSION = 59;
+  int SINCE_VERSION = 57;
 
   /**
    * The meta object id for the '{@link com.levigo.jadice.tools.pdf.modelgen.pdfmodel.Bool <em>Bool</em>}' enum.
@@ -2456,7 +2229,7 @@ public interface PdfmodelPackage extends EPackage
    * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.impl.PdfmodelPackageImpl#getBool()
    * @generated
    */
-  int BOOL = 60;
+  int BOOL = 58;
 
 
   /**
@@ -2470,17 +2243,6 @@ public interface PdfmodelPackage extends EPackage
   EClass getPDFModel();
 
   /**
-   * Returns the meta object for the containment reference '{@link com.levigo.jadice.tools.pdf.modelgen.pdfmodel.PDFModel#getConfig <em>Config</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the containment reference '<em>Config</em>'.
-   * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.PDFModel#getConfig()
-   * @see #getPDFModel()
-   * @generated
-   */
-  EReference getPDFModel_Config();
-
-  /**
    * Returns the meta object for the containment reference list '{@link com.levigo.jadice.tools.pdf.modelgen.pdfmodel.PDFModel#getPackages <em>Packages</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -2490,246 +2252,6 @@ public interface PdfmodelPackage extends EPackage
    * @generated
    */
   EReference getPDFModel_Packages();
-
-  /**
-   * Returns the meta object for class '{@link com.levigo.jadice.tools.pdf.modelgen.pdfmodel.ModelConfig <em>Model Config</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for class '<em>Model Config</em>'.
-   * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.ModelConfig
-   * @generated
-   */
-  EClass getModelConfig();
-
-  /**
-   * Returns the meta object for the attribute '{@link com.levigo.jadice.tools.pdf.modelgen.pdfmodel.ModelConfig#getBasePackage <em>Base Package</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Base Package</em>'.
-   * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.ModelConfig#getBasePackage()
-   * @see #getModelConfig()
-   * @generated
-   */
-  EAttribute getModelConfig_BasePackage();
-
-  /**
-   * Returns the meta object for the containment reference '{@link com.levigo.jadice.tools.pdf.modelgen.pdfmodel.ModelConfig#getCoreTypesConfig <em>Core Types Config</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the containment reference '<em>Core Types Config</em>'.
-   * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.ModelConfig#getCoreTypesConfig()
-   * @see #getModelConfig()
-   * @generated
-   */
-  EReference getModelConfig_CoreTypesConfig();
-
-  /**
-   * Returns the meta object for class '{@link com.levigo.jadice.tools.pdf.modelgen.pdfmodel.CoreTypesConfig <em>Core Types Config</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for class '<em>Core Types Config</em>'.
-   * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.CoreTypesConfig
-   * @generated
-   */
-  EClass getCoreTypesConfig();
-
-  /**
-   * Returns the meta object for the attribute '{@link com.levigo.jadice.tools.pdf.modelgen.pdfmodel.CoreTypesConfig#getObjectTypeName <em>Object Type Name</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Object Type Name</em>'.
-   * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.CoreTypesConfig#getObjectTypeName()
-   * @see #getCoreTypesConfig()
-   * @generated
-   */
-  EAttribute getCoreTypesConfig_ObjectTypeName();
-
-  /**
-   * Returns the meta object for the attribute '{@link com.levigo.jadice.tools.pdf.modelgen.pdfmodel.CoreTypesConfig#getReferenceTypeName <em>Reference Type Name</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Reference Type Name</em>'.
-   * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.CoreTypesConfig#getReferenceTypeName()
-   * @see #getCoreTypesConfig()
-   * @generated
-   */
-  EAttribute getCoreTypesConfig_ReferenceTypeName();
-
-  /**
-   * Returns the meta object for the attribute '{@link com.levigo.jadice.tools.pdf.modelgen.pdfmodel.CoreTypesConfig#getDictionaryTypeName <em>Dictionary Type Name</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Dictionary Type Name</em>'.
-   * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.CoreTypesConfig#getDictionaryTypeName()
-   * @see #getCoreTypesConfig()
-   * @generated
-   */
-  EAttribute getCoreTypesConfig_DictionaryTypeName();
-
-  /**
-   * Returns the meta object for the attribute '{@link com.levigo.jadice.tools.pdf.modelgen.pdfmodel.CoreTypesConfig#getNameTypeName <em>Name Type Name</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Name Type Name</em>'.
-   * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.CoreTypesConfig#getNameTypeName()
-   * @see #getCoreTypesConfig()
-   * @generated
-   */
-  EAttribute getCoreTypesConfig_NameTypeName();
-
-  /**
-   * Returns the meta object for the attribute '{@link com.levigo.jadice.tools.pdf.modelgen.pdfmodel.CoreTypesConfig#getStringTypeName <em>String Type Name</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>String Type Name</em>'.
-   * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.CoreTypesConfig#getStringTypeName()
-   * @see #getCoreTypesConfig()
-   * @generated
-   */
-  EAttribute getCoreTypesConfig_StringTypeName();
-
-  /**
-   * Returns the meta object for the attribute '{@link com.levigo.jadice.tools.pdf.modelgen.pdfmodel.CoreTypesConfig#getLiteralStringTypeName <em>Literal String Type Name</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Literal String Type Name</em>'.
-   * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.CoreTypesConfig#getLiteralStringTypeName()
-   * @see #getCoreTypesConfig()
-   * @generated
-   */
-  EAttribute getCoreTypesConfig_LiteralStringTypeName();
-
-  /**
-   * Returns the meta object for the attribute '{@link com.levigo.jadice.tools.pdf.modelgen.pdfmodel.CoreTypesConfig#getHexStringTypeName <em>Hex String Type Name</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Hex String Type Name</em>'.
-   * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.CoreTypesConfig#getHexStringTypeName()
-   * @see #getCoreTypesConfig()
-   * @generated
-   */
-  EAttribute getCoreTypesConfig_HexStringTypeName();
-
-  /**
-   * Returns the meta object for the attribute '{@link com.levigo.jadice.tools.pdf.modelgen.pdfmodel.CoreTypesConfig#getArrayTypeName <em>Array Type Name</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Array Type Name</em>'.
-   * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.CoreTypesConfig#getArrayTypeName()
-   * @see #getCoreTypesConfig()
-   * @generated
-   */
-  EAttribute getCoreTypesConfig_ArrayTypeName();
-
-  /**
-   * Returns the meta object for the attribute '{@link com.levigo.jadice.tools.pdf.modelgen.pdfmodel.CoreTypesConfig#getBooleanTypeName <em>Boolean Type Name</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Boolean Type Name</em>'.
-   * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.CoreTypesConfig#getBooleanTypeName()
-   * @see #getCoreTypesConfig()
-   * @generated
-   */
-  EAttribute getCoreTypesConfig_BooleanTypeName();
-
-  /**
-   * Returns the meta object for the attribute '{@link com.levigo.jadice.tools.pdf.modelgen.pdfmodel.CoreTypesConfig#getNumberTypeName <em>Number Type Name</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Number Type Name</em>'.
-   * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.CoreTypesConfig#getNumberTypeName()
-   * @see #getCoreTypesConfig()
-   * @generated
-   */
-  EAttribute getCoreTypesConfig_NumberTypeName();
-
-  /**
-   * Returns the meta object for the attribute '{@link com.levigo.jadice.tools.pdf.modelgen.pdfmodel.CoreTypesConfig#getRealTypeName <em>Real Type Name</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Real Type Name</em>'.
-   * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.CoreTypesConfig#getRealTypeName()
-   * @see #getCoreTypesConfig()
-   * @generated
-   */
-  EAttribute getCoreTypesConfig_RealTypeName();
-
-  /**
-   * Returns the meta object for the attribute '{@link com.levigo.jadice.tools.pdf.modelgen.pdfmodel.CoreTypesConfig#getIntegerTypeName <em>Integer Type Name</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Integer Type Name</em>'.
-   * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.CoreTypesConfig#getIntegerTypeName()
-   * @see #getCoreTypesConfig()
-   * @generated
-   */
-  EAttribute getCoreTypesConfig_IntegerTypeName();
-
-  /**
-   * Returns the meta object for the attribute '{@link com.levigo.jadice.tools.pdf.modelgen.pdfmodel.CoreTypesConfig#getNullTypeName <em>Null Type Name</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Null Type Name</em>'.
-   * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.CoreTypesConfig#getNullTypeName()
-   * @see #getCoreTypesConfig()
-   * @generated
-   */
-  EAttribute getCoreTypesConfig_NullTypeName();
-
-  /**
-   * Returns the meta object for the attribute '{@link com.levigo.jadice.tools.pdf.modelgen.pdfmodel.CoreTypesConfig#getStreamTypeName <em>Stream Type Name</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Stream Type Name</em>'.
-   * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.CoreTypesConfig#getStreamTypeName()
-   * @see #getCoreTypesConfig()
-   * @generated
-   */
-  EAttribute getCoreTypesConfig_StreamTypeName();
-
-  /**
-   * Returns the meta object for the attribute '{@link com.levigo.jadice.tools.pdf.modelgen.pdfmodel.CoreTypesConfig#getNameTreeTypeName <em>Name Tree Type Name</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Name Tree Type Name</em>'.
-   * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.CoreTypesConfig#getNameTreeTypeName()
-   * @see #getCoreTypesConfig()
-   * @generated
-   */
-  EAttribute getCoreTypesConfig_NameTreeTypeName();
-
-  /**
-   * Returns the meta object for the attribute '{@link com.levigo.jadice.tools.pdf.modelgen.pdfmodel.CoreTypesConfig#getNumberTreeTypeName <em>Number Tree Type Name</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Number Tree Type Name</em>'.
-   * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.CoreTypesConfig#getNumberTreeTypeName()
-   * @see #getCoreTypesConfig()
-   * @generated
-   */
-  EAttribute getCoreTypesConfig_NumberTreeTypeName();
-
-  /**
-   * Returns the meta object for the attribute '{@link com.levigo.jadice.tools.pdf.modelgen.pdfmodel.CoreTypesConfig#getNameTreeParserTypeName <em>Name Tree Parser Type Name</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Name Tree Parser Type Name</em>'.
-   * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.CoreTypesConfig#getNameTreeParserTypeName()
-   * @see #getCoreTypesConfig()
-   * @generated
-   */
-  EAttribute getCoreTypesConfig_NameTreeParserTypeName();
-
-  /**
-   * Returns the meta object for the attribute '{@link com.levigo.jadice.tools.pdf.modelgen.pdfmodel.CoreTypesConfig#getNumberTreeParserTypeName <em>Number Tree Parser Type Name</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Number Tree Parser Type Name</em>'.
-   * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.CoreTypesConfig#getNumberTreeParserTypeName()
-   * @see #getCoreTypesConfig()
-   * @generated
-   */
-  EAttribute getCoreTypesConfig_NumberTreeParserTypeName();
 
   /**
    * Returns the meta object for class '{@link com.levigo.jadice.tools.pdf.modelgen.pdfmodel.AbstractDeclaration <em>Abstract Declaration</em>}'.
@@ -4412,200 +3934,12 @@ public interface PdfmodelPackage extends EPackage
     EClass PDF_MODEL = eINSTANCE.getPDFModel();
 
     /**
-     * The meta object literal for the '<em><b>Config</b></em>' containment reference feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EReference PDF_MODEL__CONFIG = eINSTANCE.getPDFModel_Config();
-
-    /**
      * The meta object literal for the '<em><b>Packages</b></em>' containment reference list feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
     EReference PDF_MODEL__PACKAGES = eINSTANCE.getPDFModel_Packages();
-
-    /**
-     * The meta object literal for the '{@link com.levigo.jadice.tools.pdf.modelgen.pdfmodel.impl.ModelConfigImpl <em>Model Config</em>}' class.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.impl.ModelConfigImpl
-     * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.impl.PdfmodelPackageImpl#getModelConfig()
-     * @generated
-     */
-    EClass MODEL_CONFIG = eINSTANCE.getModelConfig();
-
-    /**
-     * The meta object literal for the '<em><b>Base Package</b></em>' attribute feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EAttribute MODEL_CONFIG__BASE_PACKAGE = eINSTANCE.getModelConfig_BasePackage();
-
-    /**
-     * The meta object literal for the '<em><b>Core Types Config</b></em>' containment reference feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EReference MODEL_CONFIG__CORE_TYPES_CONFIG = eINSTANCE.getModelConfig_CoreTypesConfig();
-
-    /**
-     * The meta object literal for the '{@link com.levigo.jadice.tools.pdf.modelgen.pdfmodel.impl.CoreTypesConfigImpl <em>Core Types Config</em>}' class.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.impl.CoreTypesConfigImpl
-     * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.impl.PdfmodelPackageImpl#getCoreTypesConfig()
-     * @generated
-     */
-    EClass CORE_TYPES_CONFIG = eINSTANCE.getCoreTypesConfig();
-
-    /**
-     * The meta object literal for the '<em><b>Object Type Name</b></em>' attribute feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EAttribute CORE_TYPES_CONFIG__OBJECT_TYPE_NAME = eINSTANCE.getCoreTypesConfig_ObjectTypeName();
-
-    /**
-     * The meta object literal for the '<em><b>Reference Type Name</b></em>' attribute feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EAttribute CORE_TYPES_CONFIG__REFERENCE_TYPE_NAME = eINSTANCE.getCoreTypesConfig_ReferenceTypeName();
-
-    /**
-     * The meta object literal for the '<em><b>Dictionary Type Name</b></em>' attribute feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EAttribute CORE_TYPES_CONFIG__DICTIONARY_TYPE_NAME = eINSTANCE.getCoreTypesConfig_DictionaryTypeName();
-
-    /**
-     * The meta object literal for the '<em><b>Name Type Name</b></em>' attribute feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EAttribute CORE_TYPES_CONFIG__NAME_TYPE_NAME = eINSTANCE.getCoreTypesConfig_NameTypeName();
-
-    /**
-     * The meta object literal for the '<em><b>String Type Name</b></em>' attribute feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EAttribute CORE_TYPES_CONFIG__STRING_TYPE_NAME = eINSTANCE.getCoreTypesConfig_StringTypeName();
-
-    /**
-     * The meta object literal for the '<em><b>Literal String Type Name</b></em>' attribute feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EAttribute CORE_TYPES_CONFIG__LITERAL_STRING_TYPE_NAME = eINSTANCE.getCoreTypesConfig_LiteralStringTypeName();
-
-    /**
-     * The meta object literal for the '<em><b>Hex String Type Name</b></em>' attribute feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EAttribute CORE_TYPES_CONFIG__HEX_STRING_TYPE_NAME = eINSTANCE.getCoreTypesConfig_HexStringTypeName();
-
-    /**
-     * The meta object literal for the '<em><b>Array Type Name</b></em>' attribute feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EAttribute CORE_TYPES_CONFIG__ARRAY_TYPE_NAME = eINSTANCE.getCoreTypesConfig_ArrayTypeName();
-
-    /**
-     * The meta object literal for the '<em><b>Boolean Type Name</b></em>' attribute feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EAttribute CORE_TYPES_CONFIG__BOOLEAN_TYPE_NAME = eINSTANCE.getCoreTypesConfig_BooleanTypeName();
-
-    /**
-     * The meta object literal for the '<em><b>Number Type Name</b></em>' attribute feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EAttribute CORE_TYPES_CONFIG__NUMBER_TYPE_NAME = eINSTANCE.getCoreTypesConfig_NumberTypeName();
-
-    /**
-     * The meta object literal for the '<em><b>Real Type Name</b></em>' attribute feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EAttribute CORE_TYPES_CONFIG__REAL_TYPE_NAME = eINSTANCE.getCoreTypesConfig_RealTypeName();
-
-    /**
-     * The meta object literal for the '<em><b>Integer Type Name</b></em>' attribute feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EAttribute CORE_TYPES_CONFIG__INTEGER_TYPE_NAME = eINSTANCE.getCoreTypesConfig_IntegerTypeName();
-
-    /**
-     * The meta object literal for the '<em><b>Null Type Name</b></em>' attribute feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EAttribute CORE_TYPES_CONFIG__NULL_TYPE_NAME = eINSTANCE.getCoreTypesConfig_NullTypeName();
-
-    /**
-     * The meta object literal for the '<em><b>Stream Type Name</b></em>' attribute feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EAttribute CORE_TYPES_CONFIG__STREAM_TYPE_NAME = eINSTANCE.getCoreTypesConfig_StreamTypeName();
-
-    /**
-     * The meta object literal for the '<em><b>Name Tree Type Name</b></em>' attribute feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EAttribute CORE_TYPES_CONFIG__NAME_TREE_TYPE_NAME = eINSTANCE.getCoreTypesConfig_NameTreeTypeName();
-
-    /**
-     * The meta object literal for the '<em><b>Number Tree Type Name</b></em>' attribute feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EAttribute CORE_TYPES_CONFIG__NUMBER_TREE_TYPE_NAME = eINSTANCE.getCoreTypesConfig_NumberTreeTypeName();
-
-    /**
-     * The meta object literal for the '<em><b>Name Tree Parser Type Name</b></em>' attribute feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EAttribute CORE_TYPES_CONFIG__NAME_TREE_PARSER_TYPE_NAME = eINSTANCE.getCoreTypesConfig_NameTreeParserTypeName();
-
-    /**
-     * The meta object literal for the '<em><b>Number Tree Parser Type Name</b></em>' attribute feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EAttribute CORE_TYPES_CONFIG__NUMBER_TREE_PARSER_TYPE_NAME = eINSTANCE.getCoreTypesConfig_NumberTreeParserTypeName();
 
     /**
      * The meta object literal for the '{@link com.levigo.jadice.tools.pdf.modelgen.pdfmodel.impl.AbstractDeclarationImpl <em>Abstract Declaration</em>}' class.

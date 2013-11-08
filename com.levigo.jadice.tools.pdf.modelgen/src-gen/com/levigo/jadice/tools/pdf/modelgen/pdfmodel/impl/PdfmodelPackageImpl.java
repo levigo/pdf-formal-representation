@@ -17,7 +17,6 @@ import com.levigo.jadice.tools.pdf.modelgen.pdfmodel.BitFlagsDeclarationPart;
 import com.levigo.jadice.tools.pdf.modelgen.pdfmodel.BitFlagsEntryValue;
 import com.levigo.jadice.tools.pdf.modelgen.pdfmodel.Bool;
 import com.levigo.jadice.tools.pdf.modelgen.pdfmodel.BooleanEntryValue;
-import com.levigo.jadice.tools.pdf.modelgen.pdfmodel.CoreTypesConfig;
 import com.levigo.jadice.tools.pdf.modelgen.pdfmodel.DateEntryValue;
 import com.levigo.jadice.tools.pdf.modelgen.pdfmodel.DictionaryDeclaration;
 import com.levigo.jadice.tools.pdf.modelgen.pdfmodel.DictionaryDeclarationEntryValue;
@@ -33,7 +32,6 @@ import com.levigo.jadice.tools.pdf.modelgen.pdfmodel.IntegerValidationRule;
 import com.levigo.jadice.tools.pdf.modelgen.pdfmodel.IntegerValuesValidationRule;
 import com.levigo.jadice.tools.pdf.modelgen.pdfmodel.IntegerValuesValidationRuleEntry;
 import com.levigo.jadice.tools.pdf.modelgen.pdfmodel.MappingDictEntryValue;
-import com.levigo.jadice.tools.pdf.modelgen.pdfmodel.ModelConfig;
 import com.levigo.jadice.tools.pdf.modelgen.pdfmodel.NameEnumDeclaration;
 import com.levigo.jadice.tools.pdf.modelgen.pdfmodel.NameEnumDeclarationPart;
 import com.levigo.jadice.tools.pdf.modelgen.pdfmodel.NameEnumEntryValue;
@@ -88,20 +86,6 @@ public class PdfmodelPackageImpl extends EPackageImpl implements PdfmodelPackage
    * @generated
    */
   private EClass pdfModelEClass = null;
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  private EClass modelConfigEClass = null;
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  private EClass coreTypesConfigEClass = null;
 
   /**
    * <!-- begin-user-doc -->
@@ -587,239 +571,9 @@ public class PdfmodelPackageImpl extends EPackageImpl implements PdfmodelPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getPDFModel_Config()
-  {
-    return (EReference)pdfModelEClass.getEStructuralFeatures().get(0);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
   public EReference getPDFModel_Packages()
   {
-    return (EReference)pdfModelEClass.getEStructuralFeatures().get(1);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EClass getModelConfig()
-  {
-    return modelConfigEClass;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EAttribute getModelConfig_BasePackage()
-  {
-    return (EAttribute)modelConfigEClass.getEStructuralFeatures().get(0);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EReference getModelConfig_CoreTypesConfig()
-  {
-    return (EReference)modelConfigEClass.getEStructuralFeatures().get(1);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EClass getCoreTypesConfig()
-  {
-    return coreTypesConfigEClass;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EAttribute getCoreTypesConfig_ObjectTypeName()
-  {
-    return (EAttribute)coreTypesConfigEClass.getEStructuralFeatures().get(0);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EAttribute getCoreTypesConfig_ReferenceTypeName()
-  {
-    return (EAttribute)coreTypesConfigEClass.getEStructuralFeatures().get(1);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EAttribute getCoreTypesConfig_DictionaryTypeName()
-  {
-    return (EAttribute)coreTypesConfigEClass.getEStructuralFeatures().get(2);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EAttribute getCoreTypesConfig_NameTypeName()
-  {
-    return (EAttribute)coreTypesConfigEClass.getEStructuralFeatures().get(3);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EAttribute getCoreTypesConfig_StringTypeName()
-  {
-    return (EAttribute)coreTypesConfigEClass.getEStructuralFeatures().get(4);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EAttribute getCoreTypesConfig_LiteralStringTypeName()
-  {
-    return (EAttribute)coreTypesConfigEClass.getEStructuralFeatures().get(5);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EAttribute getCoreTypesConfig_HexStringTypeName()
-  {
-    return (EAttribute)coreTypesConfigEClass.getEStructuralFeatures().get(6);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EAttribute getCoreTypesConfig_ArrayTypeName()
-  {
-    return (EAttribute)coreTypesConfigEClass.getEStructuralFeatures().get(7);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EAttribute getCoreTypesConfig_BooleanTypeName()
-  {
-    return (EAttribute)coreTypesConfigEClass.getEStructuralFeatures().get(8);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EAttribute getCoreTypesConfig_NumberTypeName()
-  {
-    return (EAttribute)coreTypesConfigEClass.getEStructuralFeatures().get(9);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EAttribute getCoreTypesConfig_RealTypeName()
-  {
-    return (EAttribute)coreTypesConfigEClass.getEStructuralFeatures().get(10);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EAttribute getCoreTypesConfig_IntegerTypeName()
-  {
-    return (EAttribute)coreTypesConfigEClass.getEStructuralFeatures().get(11);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EAttribute getCoreTypesConfig_NullTypeName()
-  {
-    return (EAttribute)coreTypesConfigEClass.getEStructuralFeatures().get(12);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EAttribute getCoreTypesConfig_StreamTypeName()
-  {
-    return (EAttribute)coreTypesConfigEClass.getEStructuralFeatures().get(13);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EAttribute getCoreTypesConfig_NameTreeTypeName()
-  {
-    return (EAttribute)coreTypesConfigEClass.getEStructuralFeatures().get(14);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EAttribute getCoreTypesConfig_NumberTreeTypeName()
-  {
-    return (EAttribute)coreTypesConfigEClass.getEStructuralFeatures().get(15);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EAttribute getCoreTypesConfig_NameTreeParserTypeName()
-  {
-    return (EAttribute)coreTypesConfigEClass.getEStructuralFeatures().get(16);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EAttribute getCoreTypesConfig_NumberTreeParserTypeName()
-  {
-    return (EAttribute)coreTypesConfigEClass.getEStructuralFeatures().get(17);
+    return (EReference)pdfModelEClass.getEStructuralFeatures().get(0);
   }
 
   /**
@@ -2403,32 +2157,7 @@ public class PdfmodelPackageImpl extends EPackageImpl implements PdfmodelPackage
 
     // Create classes and their features
     pdfModelEClass = createEClass(PDF_MODEL);
-    createEReference(pdfModelEClass, PDF_MODEL__CONFIG);
     createEReference(pdfModelEClass, PDF_MODEL__PACKAGES);
-
-    modelConfigEClass = createEClass(MODEL_CONFIG);
-    createEAttribute(modelConfigEClass, MODEL_CONFIG__BASE_PACKAGE);
-    createEReference(modelConfigEClass, MODEL_CONFIG__CORE_TYPES_CONFIG);
-
-    coreTypesConfigEClass = createEClass(CORE_TYPES_CONFIG);
-    createEAttribute(coreTypesConfigEClass, CORE_TYPES_CONFIG__OBJECT_TYPE_NAME);
-    createEAttribute(coreTypesConfigEClass, CORE_TYPES_CONFIG__REFERENCE_TYPE_NAME);
-    createEAttribute(coreTypesConfigEClass, CORE_TYPES_CONFIG__DICTIONARY_TYPE_NAME);
-    createEAttribute(coreTypesConfigEClass, CORE_TYPES_CONFIG__NAME_TYPE_NAME);
-    createEAttribute(coreTypesConfigEClass, CORE_TYPES_CONFIG__STRING_TYPE_NAME);
-    createEAttribute(coreTypesConfigEClass, CORE_TYPES_CONFIG__LITERAL_STRING_TYPE_NAME);
-    createEAttribute(coreTypesConfigEClass, CORE_TYPES_CONFIG__HEX_STRING_TYPE_NAME);
-    createEAttribute(coreTypesConfigEClass, CORE_TYPES_CONFIG__ARRAY_TYPE_NAME);
-    createEAttribute(coreTypesConfigEClass, CORE_TYPES_CONFIG__BOOLEAN_TYPE_NAME);
-    createEAttribute(coreTypesConfigEClass, CORE_TYPES_CONFIG__NUMBER_TYPE_NAME);
-    createEAttribute(coreTypesConfigEClass, CORE_TYPES_CONFIG__REAL_TYPE_NAME);
-    createEAttribute(coreTypesConfigEClass, CORE_TYPES_CONFIG__INTEGER_TYPE_NAME);
-    createEAttribute(coreTypesConfigEClass, CORE_TYPES_CONFIG__NULL_TYPE_NAME);
-    createEAttribute(coreTypesConfigEClass, CORE_TYPES_CONFIG__STREAM_TYPE_NAME);
-    createEAttribute(coreTypesConfigEClass, CORE_TYPES_CONFIG__NAME_TREE_TYPE_NAME);
-    createEAttribute(coreTypesConfigEClass, CORE_TYPES_CONFIG__NUMBER_TREE_TYPE_NAME);
-    createEAttribute(coreTypesConfigEClass, CORE_TYPES_CONFIG__NAME_TREE_PARSER_TYPE_NAME);
-    createEAttribute(coreTypesConfigEClass, CORE_TYPES_CONFIG__NUMBER_TREE_PARSER_TYPE_NAME);
 
     abstractDeclarationEClass = createEClass(ABSTRACT_DECLARATION);
     createEAttribute(abstractDeclarationEClass, ABSTRACT_DECLARATION__NAME);
@@ -2714,32 +2443,7 @@ public class PdfmodelPackageImpl extends EPackageImpl implements PdfmodelPackage
 
     // Initialize classes and features; add operations and parameters
     initEClass(pdfModelEClass, PDFModel.class, "PDFModel", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEReference(getPDFModel_Config(), this.getModelConfig(), null, "config", null, 0, 1, PDFModel.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getPDFModel_Packages(), this.getPackageDeclaration(), null, "packages", null, 0, -1, PDFModel.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-    initEClass(modelConfigEClass, ModelConfig.class, "ModelConfig", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEAttribute(getModelConfig_BasePackage(), ecorePackage.getEString(), "basePackage", null, 0, 1, ModelConfig.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getModelConfig_CoreTypesConfig(), this.getCoreTypesConfig(), null, "coreTypesConfig", null, 0, 1, ModelConfig.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-    initEClass(coreTypesConfigEClass, CoreTypesConfig.class, "CoreTypesConfig", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEAttribute(getCoreTypesConfig_ObjectTypeName(), ecorePackage.getEString(), "objectTypeName", null, 0, 1, CoreTypesConfig.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getCoreTypesConfig_ReferenceTypeName(), ecorePackage.getEString(), "referenceTypeName", null, 0, 1, CoreTypesConfig.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getCoreTypesConfig_DictionaryTypeName(), ecorePackage.getEString(), "dictionaryTypeName", null, 0, 1, CoreTypesConfig.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getCoreTypesConfig_NameTypeName(), ecorePackage.getEString(), "nameTypeName", null, 0, 1, CoreTypesConfig.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getCoreTypesConfig_StringTypeName(), ecorePackage.getEString(), "stringTypeName", null, 0, 1, CoreTypesConfig.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getCoreTypesConfig_LiteralStringTypeName(), ecorePackage.getEString(), "literalStringTypeName", null, 0, 1, CoreTypesConfig.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getCoreTypesConfig_HexStringTypeName(), ecorePackage.getEString(), "hexStringTypeName", null, 0, 1, CoreTypesConfig.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getCoreTypesConfig_ArrayTypeName(), ecorePackage.getEString(), "arrayTypeName", null, 0, 1, CoreTypesConfig.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getCoreTypesConfig_BooleanTypeName(), ecorePackage.getEString(), "booleanTypeName", null, 0, 1, CoreTypesConfig.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getCoreTypesConfig_NumberTypeName(), ecorePackage.getEString(), "numberTypeName", null, 0, 1, CoreTypesConfig.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getCoreTypesConfig_RealTypeName(), ecorePackage.getEString(), "realTypeName", null, 0, 1, CoreTypesConfig.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getCoreTypesConfig_IntegerTypeName(), ecorePackage.getEString(), "integerTypeName", null, 0, 1, CoreTypesConfig.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getCoreTypesConfig_NullTypeName(), ecorePackage.getEString(), "nullTypeName", null, 0, 1, CoreTypesConfig.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getCoreTypesConfig_StreamTypeName(), ecorePackage.getEString(), "streamTypeName", null, 0, 1, CoreTypesConfig.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getCoreTypesConfig_NameTreeTypeName(), ecorePackage.getEString(), "nameTreeTypeName", null, 0, 1, CoreTypesConfig.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getCoreTypesConfig_NumberTreeTypeName(), ecorePackage.getEString(), "numberTreeTypeName", null, 0, 1, CoreTypesConfig.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getCoreTypesConfig_NameTreeParserTypeName(), ecorePackage.getEString(), "nameTreeParserTypeName", null, 0, 1, CoreTypesConfig.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getCoreTypesConfig_NumberTreeParserTypeName(), ecorePackage.getEString(), "numberTreeParserTypeName", null, 0, 1, CoreTypesConfig.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(abstractDeclarationEClass, AbstractDeclaration.class, "AbstractDeclaration", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getAbstractDeclaration_Name(), ecorePackage.getEString(), "name", null, 0, 1, AbstractDeclaration.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

@@ -79,20 +79,6 @@ public class PdfmodelSwitch<T> extends Switch<T>
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
-      case PdfmodelPackage.MODEL_CONFIG:
-      {
-        ModelConfig modelConfig = (ModelConfig)theEObject;
-        T result = caseModelConfig(modelConfig);
-        if (result == null) result = defaultCase(theEObject);
-        return result;
-      }
-      case PdfmodelPackage.CORE_TYPES_CONFIG:
-      {
-        CoreTypesConfig coreTypesConfig = (CoreTypesConfig)theEObject;
-        T result = caseCoreTypesConfig(coreTypesConfig);
-        if (result == null) result = defaultCase(theEObject);
-        return result;
-      }
       case PdfmodelPackage.ABSTRACT_DECLARATION:
       {
         AbstractDeclaration abstractDeclaration = (AbstractDeclaration)theEObject;
@@ -533,38 +519,6 @@ public class PdfmodelSwitch<T> extends Switch<T>
    * @generated
    */
   public T casePDFModel(PDFModel object)
-  {
-    return null;
-  }
-
-  /**
-   * Returns the result of interpreting the object as an instance of '<em>Model Config</em>'.
-   * <!-- begin-user-doc -->
-   * This implementation returns null;
-   * returning a non-null result will terminate the switch.
-   * <!-- end-user-doc -->
-   * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Model Config</em>'.
-   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-   * @generated
-   */
-  public T caseModelConfig(ModelConfig object)
-  {
-    return null;
-  }
-
-  /**
-   * Returns the result of interpreting the object as an instance of '<em>Core Types Config</em>'.
-   * <!-- begin-user-doc -->
-   * This implementation returns null;
-   * returning a non-null result will terminate the switch.
-   * <!-- end-user-doc -->
-   * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Core Types Config</em>'.
-   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-   * @generated
-   */
-  public T caseCoreTypesConfig(CoreTypesConfig object)
   {
     return null;
   }

@@ -4,38 +4,7 @@ import "http://www.eclipse.org/emf/2002/Ecore" as ecore
 generate pdfmodel "http://www.levigo.com/jadice/tools/pdf/modelgen/PDFModel"
 
 PDFModel:
-	config=ModelConfig
 	packages+=PackageDeclaration+;
-
-ModelConfig:
-	'config' '{'
-	'base-package' basePackage=QualifiedName ';'
-	coreTypesConfig=CoreTypesConfig
-	'}';
-
-CoreTypesConfig:
-	'core-types' '{'
-	'object' objectTypeName=QualifiedName ';'
-	'reference' referenceTypeName=QualifiedName ';'
-	'dictionary' dictionaryTypeName=QualifiedName ';'
-	'name' nameTypeName=QualifiedName ';'
-	'string' stringTypeName=QualifiedName ';'
-	'literal-string' literalStringTypeName=QualifiedName ';'
-	'hex-string' hexStringTypeName=QualifiedName ';'
-	'array' arrayTypeName=QualifiedName ';'
-	'boolean' booleanTypeName=QualifiedName ';'
-	'number' numberTypeName=QualifiedName ';'
-	'real' realTypeName=QualifiedName ';'
-	'integer' integerTypeName=QualifiedName ';'
-	'null' nullTypeName=QualifiedName ';'
-	'stream' streamTypeName=QualifiedName ';'
-	'}'
-	'util-types' '{'
-	'name-tree' nameTreeTypeName=QualifiedName ';'
-	'number-tree' numberTreeTypeName=QualifiedName ';'
-	'name-tree-parser' nameTreeParserTypeName=QualifiedName ';'
-	'number-tree-parser' numberTreeParserTypeName=QualifiedName ';'
-	'}';
 
 AbstractDeclaration:
 	DictionaryDeclaration | NameEnumDeclaration | ArrayMappedDeclaration | BitFlagsDeclaration;

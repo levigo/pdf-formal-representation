@@ -32,24 +32,6 @@ public interface PdfmodelFactory extends EFactory
   PDFModel createPDFModel();
 
   /**
-   * Returns a new object of class '<em>Model Config</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return a new object of class '<em>Model Config</em>'.
-   * @generated
-   */
-  ModelConfig createModelConfig();
-
-  /**
-   * Returns a new object of class '<em>Core Types Config</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return a new object of class '<em>Core Types Config</em>'.
-   * @generated
-   */
-  CoreTypesConfig createCoreTypesConfig();
-
-  /**
    * Returns a new object of class '<em>Abstract Declaration</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->

@@ -80,16 +80,6 @@ public class PdfmodelAdapterFactory extends AdapterFactoryImpl
         return createPDFModelAdapter();
       }
       @Override
-      public Adapter caseModelConfig(ModelConfig object)
-      {
-        return createModelConfigAdapter();
-      }
-      @Override
-      public Adapter caseCoreTypesConfig(CoreTypesConfig object)
-      {
-        return createCoreTypesConfigAdapter();
-      }
-      @Override
       public Adapter caseAbstractDeclaration(AbstractDeclaration object)
       {
         return createAbstractDeclarationAdapter();
@@ -397,36 +387,6 @@ public class PdfmodelAdapterFactory extends AdapterFactoryImpl
    * @generated
    */
   public Adapter createPDFModelAdapter()
-  {
-    return null;
-  }
-
-  /**
-   * Creates a new adapter for an object of class '{@link com.levigo.jadice.tools.pdf.modelgen.pdfmodel.ModelConfig <em>Model Config</em>}'.
-   * <!-- begin-user-doc -->
-   * This default implementation returns null so that we can easily ignore cases;
-   * it's useful to ignore a case when inheritance will catch all the cases anyway.
-   * <!-- end-user-doc -->
-   * @return the new adapter.
-   * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.ModelConfig
-   * @generated
-   */
-  public Adapter createModelConfigAdapter()
-  {
-    return null;
-  }
-
-  /**
-   * Creates a new adapter for an object of class '{@link com.levigo.jadice.tools.pdf.modelgen.pdfmodel.CoreTypesConfig <em>Core Types Config</em>}'.
-   * <!-- begin-user-doc -->
-   * This default implementation returns null so that we can easily ignore cases;
-   * it's useful to ignore a case when inheritance will catch all the cases anyway.
-   * <!-- end-user-doc -->
-   * @return the new adapter.
-   * @see com.levigo.jadice.tools.pdf.modelgen.pdfmodel.CoreTypesConfig
-   * @generated
-   */
-  public Adapter createCoreTypesConfigAdapter()
   {
     return null;
   }

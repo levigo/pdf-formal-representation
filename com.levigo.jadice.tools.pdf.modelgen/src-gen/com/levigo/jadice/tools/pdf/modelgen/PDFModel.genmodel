@@ -33,32 +33,7 @@
       <genEnumLiterals ecoreEnumLiteral="PDFModel.ecore#//Bool/FALSE"/>
     </genEnums>
     <genClasses ecoreClass="PDFModel.ecore#//PDFModel">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PDFModel.ecore#//PDFModel/config"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PDFModel.ecore#//PDFModel/packages"/>
-    </genClasses>
-    <genClasses ecoreClass="PDFModel.ecore#//ModelConfig">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//ModelConfig/basePackage"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PDFModel.ecore#//ModelConfig/coreTypesConfig"/>
-    </genClasses>
-    <genClasses ecoreClass="PDFModel.ecore#//CoreTypesConfig">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//CoreTypesConfig/objectTypeName"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//CoreTypesConfig/referenceTypeName"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//CoreTypesConfig/dictionaryTypeName"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//CoreTypesConfig/nameTypeName"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//CoreTypesConfig/stringTypeName"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//CoreTypesConfig/literalStringTypeName"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//CoreTypesConfig/hexStringTypeName"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//CoreTypesConfig/arrayTypeName"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//CoreTypesConfig/booleanTypeName"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//CoreTypesConfig/numberTypeName"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//CoreTypesConfig/realTypeName"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//CoreTypesConfig/integerTypeName"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//CoreTypesConfig/nullTypeName"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//CoreTypesConfig/streamTypeName"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//CoreTypesConfig/nameTreeTypeName"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//CoreTypesConfig/numberTreeTypeName"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//CoreTypesConfig/nameTreeParserTypeName"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//CoreTypesConfig/numberTreeParserTypeName"/>
     </genClasses>
     <genClasses ecoreClass="PDFModel.ecore#//AbstractDeclaration">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PDFModel.ecore#//AbstractDeclaration/name"/>

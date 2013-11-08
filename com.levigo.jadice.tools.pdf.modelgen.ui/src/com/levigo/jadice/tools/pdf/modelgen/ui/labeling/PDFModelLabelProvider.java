@@ -16,7 +16,6 @@ import org.eclipse.xtext.ui.label.DefaultEObjectLabelProvider;
 
 import com.google.inject.Inject;
 import com.levigo.jadice.tools.pdf.modelgen.pdfmodel.DictionaryDeclaration;
-import com.levigo.jadice.tools.pdf.modelgen.pdfmodel.ModelConfig;
 import com.levigo.jadice.tools.pdf.modelgen.pdfmodel.PackageDeclaration;
 
 /**
@@ -29,10 +28,6 @@ public class PDFModelLabelProvider extends DefaultEObjectLabelProvider {
 	@Inject
 	public PDFModelLabelProvider(AdapterFactoryLabelProvider delegate) {
 		super(delegate);
-	}
-	
-	public String text(ModelConfig config) {
-	  return "Model Configuration";
 	}
 	
 	public String image(PackageDeclaration declaration) {

@@ -66,8 +66,6 @@ public class PdfmodelFactoryImpl extends EFactoryImpl implements PdfmodelFactory
     switch (eClass.getClassifierID())
     {
       case PdfmodelPackage.PDF_MODEL: return createPDFModel();
-      case PdfmodelPackage.MODEL_CONFIG: return createModelConfig();
-      case PdfmodelPackage.CORE_TYPES_CONFIG: return createCoreTypesConfig();
       case PdfmodelPackage.ABSTRACT_DECLARATION: return createAbstractDeclaration();
       case PdfmodelPackage.SPECIFICATION_REFERENCE: return createSpecificationReference();
       case PdfmodelPackage.SECTION_REFERENCE: return createSectionReference();
@@ -179,28 +177,6 @@ public class PdfmodelFactoryImpl extends EFactoryImpl implements PdfmodelFactory
   {
     PDFModelImpl pdfModel = new PDFModelImpl();
     return pdfModel;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public ModelConfig createModelConfig()
-  {
-    ModelConfigImpl modelConfig = new ModelConfigImpl();
-    return modelConfig;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public CoreTypesConfig createCoreTypesConfig()
-  {
-    CoreTypesConfigImpl coreTypesConfig = new CoreTypesConfigImpl();
-    return coreTypesConfig;
   }
 
   /**
